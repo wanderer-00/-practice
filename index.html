@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задания</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="CSS/light.css">
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: var(--body-background-color);
+    }
+
+    box {}
+
+    .wrapper {}
+
+    .cluster {
+        height: 100vh;
+        aspect-ratio: 1/1;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: var(--padding-all);
+        grid-gap: 10px;
+    }
+
+    .box {
+        border-radius: 10px;
+        padding: var(--padding-all);
+        border: 2px solid #D6D8DB;
+    }
+
+    .box>div {}
+
+    .box>p {
+        margin: 0;
+        color: var(--box-color);
+    }
+
+    .TD {
+        text-align: center;
+    }
+
+    .title {
+        text-decoration: none;
+        padding-bottom: calc(var(--padding-all)*0.5);
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--box-color);
+    }
+
+    .date {
+        color: var(--box-color);
+    }
+
+    .icon {
+        fill: var(--box-color);
+    }
+    
+    .icon:hover {
+        fill: red
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <div class="cluster"></div>
+    </div>
+
+</body>
+
+    <script type="text/javascript" src="DATA/bd.js"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+        <symbol id="0" viewBox="0 -960 960 960">
+            <path d="M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h560q33 0 56.5 23.5T800-760v80h80v80h-80v80h80v80h-80v80h80v80h-80v80q0 33-23.5 56.5T720-120H160Zm0-80h560v-560H160v560Zm80-80h200v-160H240v160Zm240-280h160v-120H480v120Zm-240 80h200v-200H240v200Zm240 200h160v-240H480v240ZM160-760v560-560Z" />
+        </symbol>
+
+        <symbol id="1" viewBox="0 -960 960 960">
+            <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z" />
+        </symbol>
+
+        <symbol id="2" viewBox="0 -960 960 960">
+            <path d="M840-680v480q0 33-23.5 56.5T760-120H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h480l160 160Zm-80 34L646-760H200v560h560v-446ZM480-240q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM240-560h360v-160H240v160Zm-40-86v446-560 114Z" />
+        </symbol>
+
+        <symbol id="3" viewBox="0 -960 960 960">
+            <path d="M280-120q-83 0-141.5-58.5T80-320q0-73 45.5-127.5T240-516v83q-35 12-57.5 43T160-320q0 50 35 85t85 35q50 0 85-35t35-85v-40h235q8-9 19.5-14.5T680-380q25 0 42.5 17.5T740-320q0 25-17.5 42.5T680-260q-14 0-25.5-5.5T635-280H476q-14 69-68.5 114.5T280-120Zm400 0q-56 0-101.5-27.5T507-220h107q14 10 31 15t35 5q50 0 85-35t35-85q0-50-35-85t-85-35q-20 0-37 5.5T611-418L489-621q-21-4-35-20t-14-39q0-25 17.5-42.5T500-740q25 0 42.5 17.5T560-680v8.5q0 3.5-2 8.5l87 146q8-2 17-2.5t18-.5q83 0 141.5 58.5T880-320q0 83-58.5 141.5T680-120ZM280-260q-25 0-42.5-17.5T220-320q0-22 14-38t34-21l94-156q-29-27-45.5-64.5T300-680q0-83 58.5-141.5T500-880q83 0 141.5 58.5T700-680h-80q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 43 26 75.5t66 41.5L337-338q2 5 2.5 9t.5 9q0 25-17.5 42.5T280-260Z" />
+        </symbol>
+
+        <symbol id="4" viewBox="0 -960 960 960">
+            <path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z" />
+        </symbol>
+
+        <symbol id="5" viewBox="0 -960 960 960">
+            <path d="M172.309-156.001q-41.033 0-69.67-28.638-28.638-28.637-28.638-69.67v-451.382q0-41.033 28.638-69.67 28.637-28.638 69.67-28.638h615.382q41.033 0 69.67 28.638 28.638 28.637 28.638 69.67v451.382q0 41.033-28.638 69.67-28.637 28.638-69.67 28.638H172.309Zm0-85.999h615.382q4.616 0 8.463-3.846 3.846-3.847 3.846-8.463V-638H160v383.691q0 4.616 3.846 8.463 3.847 3.846 8.463 3.846ZM300-276.232 240.232-336l103-104-104-104L300-603.768 463.768-440 300-276.232Zm177.001-.769v-85.998h245.998v85.998H477.001Z"/>
+        </symbol>
+    </svg>
+
+</html>
