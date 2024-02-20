@@ -5,7 +5,7 @@ for (a = 0; a < exercise.length; a++)
     <div class="box">
         <div>
             <div class="TD">
-                <a class="title" href="#">${exercise[a].TITLE}</a>
+                <a class="title" href="HTML/${a}/index.html">${exercise[a].TITLE}</a>
                 <div class="date">${exercise[a].DATE}</div>
             </div>
             <svg class="inline-svg-icon icon">
