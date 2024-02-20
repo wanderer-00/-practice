@@ -1,0 +1,14 @@
+footer {
+    padding: 1em;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+}
+
+footer a {color: #FFF}
+
+footer > .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+}
