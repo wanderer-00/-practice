@@ -70,4 +70,8 @@ header {
     color: gray;
     font-size: 40px;
 }
+
+.preview {
+    overflow: hidden;
+}
 /* preview */
