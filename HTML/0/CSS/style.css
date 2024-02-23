@@ -20,16 +20,18 @@ html {
     width: 100%;
     height: 100vh;
     padding: 10px;
-    display: inline-flex;
+    /*display: inline-flex;*/
+    display: grid;
+    grid-templayt-columns: 2fr 8fr;
 }
 
 .file_sys {
-    width: 20%;
+    /*width: 20%;*/
     margin-right: 10px;
 }
 
 .preview {
-    width: 80%;
+    /*width: 80%;*/
 }
 
 .file_sys,
@@ -75,3 +77,11 @@ header {
     overflow: hidden;
 }
 /* preview */
+
+
+
+@medua (orientation: portrait){
+    .wrapper{
+        display: grid
+    }
+}
