@@ -9,9 +9,14 @@
     * {
         font-family: sans-serif
     }
-    
+
     body {
         padding: 0 1em
+    }
+
+    .img {
+        max-width: 60%;
+        margin: auto;
     }
 </style>
 
@@ -21,7 +26,7 @@
 
     <p>Я не знаю, что из себя представляет профессия «Ландшафтный дизайн», поэтому почитал об этом.</p>
 
-    <p><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD">Ландшафтный дизайн</a> — искусство, находящееся на стыке трёх направлений: с одной стороны, архитектуры, строительства и проектирования (инженерный аспект), с другой стороны, ботаники и растениеводства (биологический аспект) и, с третьей стороны, в ландшафтном дизайне используются сведения из истории (особенно из истории культуры) и философии. Кроме того, ландшафтным дизайном называют практические действия по озеленению и благоустройству территорий.</p>
+    <p><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD"><b>Ландшафтный дизайн</b></a> — искусство, находящееся на стыке трёх направлений: с одной стороны, архитектуры, строительства и проектирования (инженерный аспект), с другой стороны, ботаники и растениеводства (биологический аспект) и, с третьей стороны, в ландшафтном дизайне используются сведения из истории (особенно из истории культуры) и философии. Кроме того, ландшафтным дизайном называют практические действия по озеленению и благоустройству территорий.</p>
 
     <p>Я не знаю каким ПО пользуются ландшафтные дизайнеры, откуда я вообще должен это знать? Это же не относиться к моей профессии. Мы должны учить алгоритмы и учиться их применять на огромных, нет, бесконечно масштабируемых структурах данных. Я и об этом почитал, хотя в реальности заказчик сам говорит для чего ему нужен компьютер. Еще заказчики желают получить максимально продуманную и производительную вычислительную машину, поэтому я выдумаю себе ещё условие: максимально сэкономить на сборке машины.</p>
 
@@ -35,156 +40,296 @@
         <li><a href="">Realtime Landscaping Architect</a></li>
     </ul>
 
+    <!--
+    <div class="table">
+        <div class="head">
+            <div>Название ПО</div>
+            <div>Стоимость</div>
+        </div>
+        <div class="body">
+            <div class="column">
+                <div>Ландшафтный Дизайн 3D</div>
+                <div>Punch Home & Landscape Design</div>
+                <div>Home designer</div>
+                <div>Realtime Landscaping Architect</div>
+            </div>
+            <div class="column">
+                <div>990-1470 ₽</div>
+                <div>34.99 $</div>
+                <div>129 $</div>
+                <div>599 $</div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <style>
+        table {
+            width: 100%;
+            margin: auto;
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #BFBFBF;
+            padding: 10px 16px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #F2F2F2;
+        }
+
+        table th {
+            padding: 10px;
+            border: 1px solid #BFBFBF;
+            background-color: transparent;
+        }
+    </style>
+
     <table>
         <tr>
-            <th>Название ПО</th>
+            <th align="left">Название ПО</th>
             <th>Стоимость</th>
         </tr>
         <tr>
-            <th>Ландшафтный Дизайн 3D</th>
-            <th>990-1470 ₽</th>
+            <td>Ландшафтный Дизайн 3D</td>
+            <td align="center">990-1470 ₽</td>
         </tr>
         <tr>
-            <th>Punch Home & Landscape Design</th>
-            <th>34.99 $</th>
+            <td>Punch Home & Landscape Design</td>
+            <td align="center">34.99 $</td>
         </tr>
         <tr>
-            <th>Home designer</th>
-            <th>129 $</th>
+            <td>Home designer</td>
+            <td align="center">129 $</td>
         </tr>
         <tr>
-            <th>Realtime Landscaping Architect</th>
-            <th>599 $</th>
+            <td>Realtime Landscaping Architect</td>
+            <td align="center">599 $</td>
         </tr>
     </table>
-    
+
     <p>Так же составил таблицу стоимости. ПО для ландшафтного дизайна не из дешёвых, тут и пригодиться экономия на подборке комплектующих.</p>
-    
+
     <p>2, 3 (совместно для упрощения подсчёта цен) С ПО определился, думаю, верно. Для этих программ достаточно вычислительной машины, собранной до моего рождения. Навряд ли у заказчика ПК древнее, значит буду рассчитывать на дополнительный минимум по системным требованиям. Например, Blender. ПО – аналог. Но более современный и требовательный.</p>
-    
+
     <p><b>Рекомендуемые системные требования <a href="https://www.blender.org/">Blender</a></b></p>
-    
+
     <table>
         <tr>
-            <th>1</th>
-            <th>1</th>
+            <td>ОС</td>
+            <td>Начиная с: Linux, Windows 7, macOS 10.13</td>
         </tr>
         <tr>
-            <th>2</th>
-            <th>3</th>
+            <td>Процессор</td>
+            <td>64-битный многопоточный</td>
         </tr>
         <tr>
-            <th>3</th>
-            <th>3</th>
+            <td>Оперативная память</td>
+            <td>16 Гб</td>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
+            <td>Графический процессор</td>
+            <td>4 ГБ и с поддержкой технологии OpenGL 4.5</td>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
+            <td>Накопитель</td>
+            <td>SSD 10 Гб</td>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
+            <td>Матрица</td>
+            <td>1920x1080 пикселей</td>
         </tr>
     </table>
-    
+
     <p><b>Комплектующие</b></p>
-    
+
     <table>
         <tr>
-            <th>1</th>
-            <th>1</th>
-            <th>1</th>
+            <td>Тип</td>
+            <td>Наименование</td>
+            <td>Цена (₽)</td>
+        </tr>
+        <tr>
+            <td>Процессор</td>
+            <td>Intel Xeon E5-2678v3</td>
+            <td>1411</td>
+        </tr>
+        <tr>
+            <td>Оперативная память</td>
+            <td>Samsung</td>
+            <td>4684</td>
+        </tr>
+        <tr>
+            <td>Видеокарта</td>
+            <td>AMD Radeon RX580</td>
+            <td>12888</td>
+        </tr>
+        <tr>
+            <td>Материнская плата</td>
+            <td>HUANANZHI X99 TF LGA 2011-3</td>
+            <td>7585</td>
+        </tr>
+        <tr>
+            <td>SSD</td>
+            <td>Samsung 980 Pro</td>
+            <td>4248</td>
+        </tr>
+        <tr>
+            <td>HDD</td>
+            <td>Western Digital Black</td>
+            <td>11702</td>
+        </tr>
+        <tr>
+            <td>Охлаждение</td>
+            <td>DeepCool</td>
+            <td>3889</td>
+        </tr>
+        <tr>
+            <td>Блок питания</td>
+            <td>be quiet! Pure Power 11</td>
+            <td>7361</td>
+        </tr>
+        <tr>
+            <td>Корпус</td>
+            <td>Code Explorer GC-NX6</td>
+            <td>4823</td>
+        </tr>
+        <tr>
+            <td>Монитор</td>
+            <td>VecorSonic 32 2k165</td>
+            <td>33588</td>
+        </tr>
+        <tr>
+            <td>Наушники</td>
+            <td>A4Tech Bloody G521</td>
+            <td>2918</td>
+        </tr>
+        <tr>
+            <td>Клавиатура</td>
+            <td>ARDOR GAMING Immortality</td>
+            <td>3999</td>
+        </tr>
+        <tr>
+            <td>Мышь</td>
+            <td>Logitech G Logitech G102 LightSync</td>
+            <td>1889</td>
+        </tr>
+        <tr>
+            <td>Дополнительно</td>
+            <td>Стяжки, салфетки для монитора, отвёртка, DP 2шт</td>
+            <td>3500</td>
+        </tr>
+        <tr>
+            <td>Всего</td>
+            <td></td>
+            <td>104485</td>
         </tr>
     </table>
-    
+
     <p>Этой вычислительной машины точно должно хватить. Большинство комплектующих я использую сам, качество отличное. Получилось сэкономить на покупку программ.</p>
-    
+
     <h2>Xeon E5-2678v3</h2>
-    <img src="IMG/CPU_0.jpg" alt="Xeon E5-2678v3 лицевая сторона">
-    <img src="IMG/CPU_1.jpg" alt="Xeon E5-2678v3 обратная сторона">
+    <div class="img">
+        <img src="IMG/CPU_0.jpg" alt="Xeon E5-2678v3 лицевая сторона" width="50%"><img src="IMG/CPU_1.jpg" alt="Xeon E5-2678v3 обратная сторона" width="50%">
+    </div>
     <p>12 ядер. 24 потока. Частота 2.5 МГц (с возможностью разгона частоты).</p>
     <p>Ссылка на магазин: <a href="https://aliexpress.ru/item/4000414556215.html">AliExpress</a></p>
-    
+
     <h2>AMD Radeon RX580</h2>
-    <img src="IMG/VideoCard_0.png" alt="AMD Radeon RX580 лицевая сторона">
-    <img src="IMG/VideoCard_1.png" alt="AMD Radeon RX580 боковая сторона">
+    <div class="img">
+        <img src="IMG/VideoCard_0.png" alt="AMD Radeon RX580 лицевая сторона" width="60%"><img src="IMG/VideoCard_1.png" alt="AMD Radeon RX580 боковая сторона" width="38%">
+    </div>
     <p>Поддержка OpenGL 4.5 и более новой версии. 8 Гб видеопамяти. 2 экземпляра. Совместить при помощи технологии AMD CrossFire.</p>
     <p>Ссылка на магазин: <a href="https://ozon.ru/t/yZpbeNG">OZON</a></p>
-    
+
     <h2>HUANANZHI X99 TF LGA 2011-3</h2>
-    <img src="IMG/MatherBoard.png" alt="HUANANZHI X99 TF LGA 2011-3 лицевая сторона">
+    <div class="img">
+        <img src="IMG/MatherBoard.png" alt="HUANANZHI X99 TF LGA 2011-3 лицевая сторона" width="100%">
+    </div>
     <p>Поддержка 4-ёх канального режима работы оперативной памяти. Максимальный поддерживаемый объём памяти 256 Гб. Поддержка DDR3 и DDR4.</p>
     <p>Ссылка на магазин: <a href="https://aliexpress.ru/item/1005005233924379.html">AliExpress</a></p>
-    
+
     <h2>Samsung</h2>
-    <img src="IMG/RAM.jpg" alt="RAM Samsung DDR3 лицевая сторона">
+    <div class="img">
+        <img src="IMG/RAM.jpg" alt="RAM Samsung DDR3 лицевая сторона" width="100%">
+    </div>
     <p>Тип DDR3, серверная. Частота 1866 МГц. 4 планки по 16 Гб.</p>
     <p>Ссылка на магазин: <a href="https://aliexpress.ru/item/33018541429.html">AliExpress</a></p>
 
     <h2>DeepCool Тёмный лед 500 ARGB</h2>
-    <img src="IMG/airCooling%20System_0.png" alt="DeepCool Тёмный лед 500 ARGB лицевая сторона">
-    <img src="IMG/airCooling%20System_1.png" alt="DeepCool Тёмный лед 500 ARGB боковая сторона">
+    <div class="img">
+        <img src="IMG/airCooling%20System_0.png" alt="DeepCool Тёмный лед 500 ARGB лицевая сторона" width="57%"><img src="IMG/airCooling%20System_1.png" alt="DeepCool Тёмный лед 500 ARGB боковая сторона"  width="43%">
+    </div>
     <p>5 тепловых трубок. Он подойдет для сокета 2011v3. Рассеивая мощность 240 Вт, это вдвое больше TDP процессора в 120 Вт (в стоке).</p>
     <p>Ссылка на магазин: <a href="https://ozon.ru/t/zlM2q3M">OZON</a></p>
 
     <h2>be quiet! Pure Power 11</h2>
-    <img src="IMG/powerUnit_0.png" alt="be quiet! Pure Power 11">
-    <img src="IMG/powerUnit_1.png" alt="be quiet! Pure Power 11">
+    <div class="img">
+        <img src="IMG/powerUnit_0.png" alt="be quiet! Pure Power 11" width="55%"><img src="IMG/powerUnit_1.png" alt="be quiet! Pure Power 11" width="45%">
+    </div>
     <p>Мощность по 12 V линии равна 450 W. Этого хватает даже при разгоне. Имеются все необходимые цепи питания и интерфейсы.</p>
     <p>Ссылка на магазин: <a href="https://ozon.ru/t/EprNdRB">OZON</a></p>
 
     <h2>ARDOR GAMING Immortality</h2>
-    <img src="IMG/keyboard.png" alt="">
+    <div class="img">
+        <img src="IMG/keyboard.png" alt="Клавиатура ARDOR GAMING Immortality белая" width="100%">
+    </div>
     <p>Ссылка на магазин: <a href="https://www.dns-shop.ru/product/a54277752751ed20/klaviatura-provodnaa-ardor-gaming-immortality/">DNS</a></p>
 
     <h2>Code Explorer GC-NX6</h2>
-    <img src="IMG/PC_case_0.png" alt="Code Explorer GC-NX6">
-    <img src="IMG/PC_case_1.png" alt="Code Explorer GC-NX6 вид с зади">
+    <div class="img">
+        <img src="IMG/PC_case_0.png" alt="Code Explorer GC-NX6" width="60%"><img src="IMG/PC_case_1.png" alt="Code Explorer GC-NX6 вид с зади" width="40%">
+    </div>
     <p>ATX формфактор. Все комплектующие поместятся, даже башня.</p>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/plzlZDD">OZON</a></p>
 
     <h2>Logitech G102 LightSync</h2>
-    <img src="IMG/mouse.png" alt="Logitech G102 LightSync белая">
+    <div class="img">
+        <img src="IMG/mouse.png" alt="Logitech G102 LightSync белая" width="100%">
+    </div>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/qlJb3wo">OZON</a></p>
-    
+
     <h2>Samsung 980 Pro</h2>
-    <img src="IMG/SSD.png" alt="Samsung 980 Pro лицевая сторона">
+    <div class="img">
+        <img src="IMG/SSD.png" alt="Samsung 980 Pro лицевая сторона" width="100%">
+    </div>
     <p>Надежный и сверх быстрый NVMe M2 накопитель. Объём 500 Гб.</p>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/GL13pab">OZON</a></p>
-    
+
     <h2>Western Digital Black WD2003FYYS</h2>
-    <img src="IMG/HDD_0.png" alt="Western Digital Black WD2003FYYS">
-    <img src="IMG/HDD_1.png" alt="Western Digital Black WD2003FYYS в разборе">
+    <div class="img">
+        <img src="IMG/HDD_0.png" alt="Western Digital Black WD2003FYYS" width="50%"><img src="IMG/HDD_1.png" alt="Western Digital Black WD2003FYYS в разборе" width="50%">
+    </div>
     <p>2 экземпляра для объединения в зеркальный массив данных. Эта модель и так надежная, но надежности нет предела. В сумме будет 2 Тб * 2 (кол-во) / 2 (требования зеркального массива) = 2 Тб.</p>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/plzoLp0">OZON</a></p>
-    
+
     <h2>A4Tech Bloody G521</h2>
-    <img src="IMG/headphones_0.png" alt="A4Tech Bloody G521 лицевая сторона">
-    <img src="IMG/headphones_1.png" alt="A4Tech Bloody G521 боковая сторона">
+    <div class="img">
+        <img src="IMG/headphones_0.png" alt="A4Tech Bloody G521 лицевая сторона" width="60%"><img src="IMG/headphones_1.png" alt="A4Tech Bloody G521 боковая сторона" width="40%">
+    </div>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/6M3V67V">OZON</a></p>
-    
+
     <h2>VecorSonic 32 2k165</h2>
-    <img src="IMG/monitor_0.png" alt="VecorSonic 32 2k165 лицевая сторона">
-    <img src="IMG/monitor_1.png" alt="VecorSonic 32 2k165 боковая сторона">
+    <div class="img">
+        <img src="IMG/monitor_0.png" alt="VecorSonic 32 2k165 лицевая сторона" width="79%"><img src="IMG/monitor_1.png" alt="VecorSonic 32 2k165 боковая сторона" width="21%">
+    </div>
     <p>2 монитора. Частота обновления экрана 165 Гц. Разрешение 2К. Видеокарта поддерживает. Display Port для полного функционала</p>
     <p>Ссылка намагазин: <a href="https://ozon.ru/t/k0w1NAW">OZON</a></p>
-    
+
     <h2>Источники</h2>
     <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD">wikipedia.org - Ландшафтный дизайн</a><br>
     <a href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BA_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_%D0%BE%D1%85%D0%BB%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0">TDP</a><br>
     <a href="https://ru.wikipedia.org/wiki/DisplayPort">DP</a>
-    
+
     <p>Программное обеспечение</p>
     <a href="https://amssoft.ru/lands/landscape3d/lp.php?ap=68437">Ландшафтный Дизайн 3D</a>
     <a href=""></a>
     <a href=""></a>
     <a href=""></a>
     <a href=""></a>
-    
+
     <img src="" alt="">
     <img src="" alt="">
     <img src="" alt="">
