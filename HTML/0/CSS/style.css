@@ -22,17 +22,15 @@ html {
     padding: 10px;
     /*display: inline-flex;*/
     display: grid;
-    grid-templayt-columns: 2fr 8fr;
+    grid-template-columns: 2fr 8fr;
 }
 
 .file_sys {
-    /*width: 20%;*/
     margin-right: 10px;
+    overflow: hidden;
 }
 
-.preview {
-    /*width: 80%;*/
-}
+.preview {}
 
 .file_sys,
 .preview,
@@ -49,6 +47,8 @@ header {
     display: grid;
     grid-template-columns: 40px 1fr 40px;
 }
+
+.box:last-child {border: none}
 
 .box:hover {
     background-color: #F6F8FA;
@@ -70,7 +70,7 @@ header {
 /* preview */
 .container p {
     color: gray;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 .preview {
@@ -80,8 +80,20 @@ header {
 
 
 
-@medua (orientation: portrait){
+@media (orientation: portrait){
     .wrapper{
-        display: grid
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    
+    .file_sys {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    /* preview */
+    .container p {
+        font-size: 1em;
+        
     }
 }
