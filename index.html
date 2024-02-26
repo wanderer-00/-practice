@@ -21,25 +21,25 @@
         background-color: var(--body-background-color);
     }
 
-    box {}
-
     .wrapper {}
 
     .cluster {
-        height: 100vh;
-        aspect-ratio: 1/1;
+        width: 70%;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         padding: var(--padding-all);
         grid-gap: 10px;
+        justify-content: center;
     }
 
     .box {
+        height: 350px;
+        aspect-ratio: 1/1;
         border-radius: 10px;
         padding: var(--padding-all);
         border: 2px solid #D6D8DB;
+        text-align: center;
     }
 
     .box>div {}
