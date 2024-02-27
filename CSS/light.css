@@ -1,5 +1,8 @@
 :root {
-    --body-background-color: #FFF;
-    --box-color: #75767A;
+    --body-background-color: #e5e9f4;
+    --box-color: #000;
+    --color-hover: hsl(10 80% 50%);
     --padding-all: 20px;
+    
+    --shadow: -.5rem -.5rem 1rem hsl(0 0% 100% / .75), .5rem .5rem 1rem hsl(0 0% 50% / .5);
 }

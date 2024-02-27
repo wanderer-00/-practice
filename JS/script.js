@@ -2,15 +2,12 @@ var cluster = document.getElementsByClassName('cluster')[0];
 
 for (a = 0; a < exercise.length; a++)
     cluster.innerHTML += `
-    <div class="box">
+    <a class="box" href="#">
         <div>
-            <div class="TD">
-                <a class="title" href="HTML/${a}/index.html">${exercise[a].TITLE}</a>
-                <div class="date">${exercise[a].DATE}</div>
-            </div>
+            <h2>${exercise[a].TITLE}</h2>
             <svg class="inline-svg-icon icon">
                 <use xlink:href="#${a}"></use>
             </svg>
         </div>
-        <p align="center">${exercise[a].NOTE}...</p>
-    </div>`
+        <p align="center">${exercise[a].NOTE}</p>
+    </a>`

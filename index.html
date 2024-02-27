@@ -20,64 +20,213 @@
         margin: 0;
         background-color: var(--body-background-color);
     }
+    
+    /* header */
+    header {
+        width: 100%;
+        box-shadow: 0px 6px 8px 0px rgba(212,212,212,0.74);
+        -webkit-box-shadow: 0px 6px 8px 0px rgba(212,212,212,0.74);
+        -moz-box-shadow: 0px 6px 8px 0px rgba(212,212,212,0.74);
+    }
+    
+    .clusterFix {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .clusterFix > div {
+        margin: 8px 10px;
+    }
+    
+    .fix {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        
+    }
+    /* header */
 
-
+    .wrapper {
+        width: 60%;
+        margin: auto;
+    }
+    
     .cluster {
-        width: 70%;
+        width: 100%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         padding: var(--padding-all);
         justify-content: center;
-        border: 2px solid red
     }
 
     .box {
-        height: 350px;
+        height: 250px;
         aspect-ratio: 1/1;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: var(--padding-all);
-        border: 2px solid #D6D8DB;
+        margin: 16px;
+        box-shadow: var(--shadow);
+        border: 1rem solid transparent;
         text-align: center;
     }
 
     .box>p {
         margin: 0;
-        color: var(--box-color);
-    }
-
-    .TD {
-        text-align: center;
-    }
-
-    .title {
-        text-decoration: none;
-        font-size: 2em;
-        font-weight: bold;
-        color: var(--box-color);
-    }
-
-    .date {
-        color: var(--box-color);
     }
 
     .icon {
-        fill: var(--box-color);
+        height: 100px;
+        width: 100%;
+        margin: 10px 0;
+        fill: #000;
+    }
+    
+    .icon:hover {
+        fill: var(--color-hover);
+        transition: all 0.2s;
+    }
+    @media (orientation: portrait) {
+        .wrapper {width: 100%}
+        
+        .fix {
+            height: 2em;
+        }
+        
+        .clusterFix > div {
+            margin: 0.5em 0.1em;
+        }
+        
+        .box h2 {
+            margin: 0;
+        }
     }
 </style>
 
 <body>
+    
+    <header>
+        <div class="wrapper">
+            <div class="clusterFix">
+                <div title="Поддержка Word файлов">
+                    <svg class="inline-svg-icon fix" fill="#34c471">
+                        <use xlink:href="#word"></use>
+                    </svg>
+                </div>
+                
+                <div title="Поддержка 3D моделей">
+                    <svg class="inline-svg-icon fix" fill="#34c471">
+                        <use xlink:href="#3d"></use>
+                    </svg>
+                </div>
 
+                <div title="Поддержка Excel таблиц">                
+                    <svg class="inline-svg-icon fix" fill="#df3670">
+                        <use xlink:href="#excel"></use>
+                    </svg>
+                </div>
+                
+                <div title="Автоматизация парсинга файлов работ">
+                    <svg class="inline-svg-icon fix" fill="#df3670">
+                        <use xlink:href="#auto"></use>
+                    </svg>
+                </div>
+
+                <div title="Поддержка смены тёмной и светлой темы">
+                    <svg class="inline-svg-icon fix" fill="#df3670">
+                        <use xlink:href="#theme"></use>
+                    </svg>
+                </div>
+
+                <div title="Поддержка компьютерной версии сайта">
+                    <svg class="inline-svg-icon fix" fill="#34c471">
+                        <use xlink:href="#pc"></use>
+                    </svg>
+                </div>
+
+                <div title="Поддержка мобильной версии сайта">
+                    <svg class="inline-svg-icon fix" fill="#34c471">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        .box {
+            text-decoration: none;
+            color: #000;
+            transition: all 0.2s;
+            
+            &:hover,
+            &:focus-visible {
+                color: hsl(10 80% 50%);
+                fill: hsl(10 80% 50%);
+                scale: 1.06;
+            }
+        }
+        
+        .box:hover {
+            color: var(--color-hover)
+        }
+        
+        .box:active {
+            box-shadow: var(--shadow), inset 0.5rem 0.5rem 1rem hsl(0 0% 50% / .5), inset -0.5rem -0.5rem 1rem hsl(0 0% 100% / .75);
+        }
+        
+        .box h2 {
+            font-size: 1.4em;
+        }
+        
+        .clusterFix > div
+    </style>
+    
     <div class="wrapper">
         <div class="cluster"></div>
     </div>
-
+    
 </body>
 
     <script type="text/javascript" src="DATA/bd.js"></script>
     <script type="text/javascript" src="JS/script.js"></script>
-
+    
+    <!-- Иконки фич -->
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+       
+        <symbol id="word" viewBox="0 -960 960 960">
+            <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
+        </symbol>
+
+        <symbol id="3d" viewBox="0 -960 960 960">
+            <path d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-40-343 237-137-237-137-237 137 237 137ZM160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11L160-252Zm320-228Z"/>
+        </symbol>
+
+        <symbol id="excel" viewBox="0 -960 960 960">
+            <path d="M120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200q-33 0-56.5-23.5T120-200Zm80-400h560v-160H200v160Zm213 200h134v-120H413v120Zm0 200h134v-120H413v120ZM200-400h133v-120H200v120Zm427 0h133v-120H627v120ZM200-200h133v-120H200v120Zm427 0h133v-120H627v120Z"/>
+        </symbol>
+
+        <symbol id="auto" viewBox="0 -960 960 960">
+            <path d="M159-120v-120h124L181-574q-27-15-44.5-44T119-680q0-50 35-85t85-35q39 0 69.5 22.5T351-720h128v-40q0-17 11.5-28.5T519-800q9 0 17.5 4t14.5 12l68-64q9-9 21.5-11.5T665-856l156 72q12 6 16.5 17.5T837-744q-6 12-17.5 15.5T797-730l-144-66-94 88v56l94 86 144-66q11-5 23-1t17 15q6 12 1 23t-17 17l-156 74q-12 6-24.5 3.5T619-512l-68-64q-6 6-14.5 11t-17.5 5q-17 0-28.5-11.5T479-600v-40H351q-3 8-6.5 15t-9.5 15l200 370h144v120H159Zm80-520q17 0 28.5-11.5T279-680q0-17-11.5-28.5T239-720q-17 0-28.5 11.5T199-680q0 17 11.5 28.5T239-640Zm126 400h78L271-560h-4l98 320Zm78 0Z"/>
+        </symbol>
+
+        <symbol id="theme" viewBox="0 -960 960 960">
+            <path d="M396-396q-32-32-58.5-67T289-537q-5 14-6.5 28.5T281-480q0 83 58 141t141 58q14 0 28.5-2t28.5-6q-39-22-74-48.5T396-396Zm57-56q51 51 114 87.5T702-308q-40 51-98 79.5T481-200q-117 0-198.5-81.5T201-480q0-65 28.5-123t79.5-98q20 72 56.5 135T453-452Zm290 72q-20-5-39.5-11T665-405q8-18 11.5-36.5T680-480q0-83-58.5-141.5T480-680q-20 0-38.5 3.5T405-665q-8-19-13.5-38T381-742q24-9 49-13.5t51-4.5q117 0 198.5 81.5T761-480q0 26-4.5 51T743-380ZM440-840v-120h80v120h-80Zm0 840v-120h80V0h-80Zm323-706-57-57 85-84 57 56-85 85ZM169-113l-57-56 85-85 57 57-85 84Zm671-327v-80h120v80H840ZM0-440v-80h120v80H0Zm791 328-85-85 57-57 84 85-56 57ZM197-706l-84-85 56-57 85 85-57 57Zm199 310Z"/>
+        </symbol>
+
+        <symbol id="pc" viewBox="0 -960 960 960">
+            <path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/>
+        </symbol>
+
+        <symbol id="phone" viewBox="0 -960 960 960">
+            <path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/>
+        </symbol>
+    </svg>
+    
+    <!-- Иконки заданий -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+
         <symbol id="0" viewBox="0 -960 960 960">
             <path d="M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h560q33 0 56.5 23.5T800-760v80h80v80h-80v80h80v80h-80v80h80v80h-80v80q0 33-23.5 56.5T720-120H160Zm0-80h560v-560H160v560Zm80-80h200v-160H240v160Zm240-280h160v-120H480v120Zm-240 80h200v-200H240v200Zm240 200h160v-240H480v240ZM160-760v560-560Z" />
         </symbol>
