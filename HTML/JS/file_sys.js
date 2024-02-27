@@ -1,20 +1,3 @@
-var files = [
-    {
-        "NAME": "Задание",
-        "ICON": "docx"
-    },
-
-    {
-        "NAME": "Работа",
-        "ICON": "docx"
-    },
-
-    {
-        "NAME": "Сцена",
-        "ICON": "blend"
-    }
-];
-
 var file_sys = document.getElementsByClassName('file_sys')[0];
 
 for (a = 0; a < files.length; a++) {
