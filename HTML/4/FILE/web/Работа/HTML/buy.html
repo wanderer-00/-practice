@@ -19,19 +19,21 @@
 
 
 
+    <div class="out">
         <header>
-            <div class="logo">
+            <a class="logo" href="#">
                 <img src="../IMG/favicon.svg">
                 <div>
                     <p>Car</p>
                     <p>Sale</p>
                 </div>
-            </div>
+            </a>
             <div class="wrapper">
                 <div class="navigation">
-                    <a href="#">Компания</a>
+                    <a href="HTML/about.html">Компания</a>
                     <a href="HTML/catalog.html">Каталог</a>
-                    <a href="#">Контакты</a>
+                    <a href="HTML/contacts.html">Контакты</a>
+                    <a href="#">Купить</a>
                 </div>
             </div>
         </header>
@@ -145,9 +147,65 @@
                             }
                         </script>
                     </div>
-
+                    
+                    
+                    
+                    <style>
+                        
+                        .range {
+                            height: 80px;
+                            width: 380px;
+                            background-color: blue;
+                            border-radius: 10px;
+                            padding: 0 65px 0 45px;
+                        }
+                        
+                        .range .field {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                        }
+                        
+                        .range .field input {
+                            -webkit-appearance: none;
+                            height: 3px;
+                            width: 100%;
+                            background-color: #DDD;
+                            border-radius: 5px;
+                            outline: none;
+                            border: none;
+                        }
+                        
+                        .range .field .value {
+                            position: absolute;
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #664AFF;
+                        }
+                        
+                        .range .field .value.left {
+                            left: -22px;
+                        }
+                        
+                        .range .field .value.right {
+                            left: -43px;
+                        }
+                    </style>
                     <div>
                         <h2>Диапазон цен</h2>
+                        <div class="range">
+                            <div class="sliderValue">
+                                <span>100</span>
+                            </div>
+                            <div class="field">
+                                <div class="value left">0</div>
+                                <input type="range" min="0" max="200" value="100" steps="1">
+                                
+                                <div class="value right">200</div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
