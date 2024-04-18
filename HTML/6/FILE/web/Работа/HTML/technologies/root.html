@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список студентов</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .WRAPPER {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header,
+        footer {
+            height: 100px;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        
+        header .wrapper,
+        footer .wrapper {
+            height: 100%;
+            display: flex;
+        }
+        
+        .logo {
+            height: 100%;
+            aspect-ratio: 353.351/260.7167;
+            background-color: beige;
+            background-image: url(../favicon.svg);
+        }
+        
+        main {
+            flex: 1 1 auto;
+        }
+        
+        
+        
+        #test {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            color: red
+        }
+        
+        #test::before {
+            content: url(../favicon.svg);
+        }
+        
+        #test:hover {
+            color: red;
+        }
+    </style>
+
+<body>
+    
+    <div class="WRAPPER">
+        <header>
+            <div class="wrapper">
+                <div class="logo"></div>
+                <div class="navi">
+                    <div><a href="HTML/students.html">Список студентов</a></div>
+                    <div><a href="#">Лучшие моменты</a></div>
+                    <div><a href="#">Лицензия</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+
+                <button id="test">
+                    <i class="test"></i>
+                </button>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="logo"></div>
+                <p>Сайт создан 1 марта 2024 года</p>
+                <p>Создатель: �����</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
