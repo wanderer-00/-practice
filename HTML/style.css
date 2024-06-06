@@ -30,7 +30,10 @@ html {
     overflow: hidden;
 }
 
-.preview {}
+.preview {
+    height: 100vh;
+    aspect-ratio: 210/297;
+}
 
 .file_sys,
 .preview,
